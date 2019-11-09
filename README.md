@@ -10,12 +10,10 @@ IceCat browser with tor in [musl](https://www.musl-libc.org/faq.html) [Void Linu
 ### running:
 ```
 docker run --rm -dit \
-    --device /dev/snd \
     -e DISPLAY=$DISPLAY \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     icecat
 ```
- * __--device /dev/snd__ - mount sound devices
  * __/tmp/.X11-unix__ - path to x11 control directory
  
 optianaly you can add:
